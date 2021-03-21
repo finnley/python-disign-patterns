@@ -4,7 +4,7 @@ import cash_super
 # 返利收费子类
 class CashReturn(cash_super.CashSuper):
     def __init__(self, money_condition, money_return):
-        self._money_condition = money_condition
+        self._money_condition = money_return
         self._money_return = money_return
 
     # 返利收费，初始化时必须要输入返利条件和返利值，比如满300返100，则 money_condition = 300, money_return =  100
